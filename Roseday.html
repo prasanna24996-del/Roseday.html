@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day! 🌹</title>
+    <style>
+        body {
+            background-color: #fff5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Simple CSS Rose */
+        .rose {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #e63946;
+            border-radius: 50% 50% 50% 50% / 80% 80% 20% 20%;
+            margin: 0 auto 20px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .rose::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 100px;
+            background: #2d6a4f;
+            top: 95px;
+            left: 45px;
+            z-index: -1;
+        }
+
+        h1 {
+            color: #d62828;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2rem;
+            max-width: 300px;
+            line-height: 1.5;
+        }
+
+        .heart {
+            color: #e63946;
+            font-size: 20px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="rose"></div>
+        <h1>Happy Rose Day!</h1>
+        <p>To the person who makes my life bloom every single day. <br>
+           <strong>I love you!</strong></p>
+        <div class="heart">❤❤❤</div>
+    </div>
+
+</body>
+</html>
